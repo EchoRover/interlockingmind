@@ -23,6 +23,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
     
     
 }
@@ -38,9 +39,11 @@ header{
     border-radius: 6px;
     font-size: 1em;
     font-weight: bold;
+    transition: all 110ms;
 }
 
 .sign-button:hover{
     box-shadow: 0 1px 5px var(--black-shadow);
+    border-radius: 20px;
     
 }

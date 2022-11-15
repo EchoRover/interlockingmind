@@ -23,14 +23,15 @@
     <body>
         <div class="landing-page">
             <header>
-                <div class="left-section">
+                <div class="left-section"onclick="location.href='index.html';">
                     <img class="logo" src="images/icon.png">
                     <img class="logo-text" src="images/logo text.png">
     
                 </div>
                 <div class="right-section">
-                    <button class="sign-button">LOGIN</button>
+                    <button class="sign-button" onClick="document.getElementById('mail').scrollIntoView();">LOGIN</button>
                 </div>
+                <meta name="viewport" content="width=device-width">
                 
     
     
@@ -57,8 +58,9 @@
                         <div class="rectange"></div>
                     </div>
                     <div class="buttons">
-                        <button class="join-button">JOIN US</button>
-                        <button class="discover-button">DISCOVER</button>
+                        <button class="join-button" onClick="document.getElementById('mail').scrollIntoView();">JOIN US</button>
+                        <a href="agrobot.html" style="display: inline;"><button class="discover-button">DISCOVER</button></a>
+
                     </div>
     
                 </div>
@@ -68,7 +70,11 @@
                 </div>
             </div>
     
-            <div class="box-2"></div>
+            <div class="box-2">
+                <div><q>Hands on the best site ever!</q></div> 
+                <div>⭐️⭐️⭐️⭐️⭐️-Ankaan</div>
+
+            </div>
              <div class="line">
                 <div class="l"></div>
             </div>
@@ -84,7 +90,7 @@
                             <div class="blue-circle yellow-circle"></div>
     
     
-                            <img class="image-descibe" src="images/bot-test.png">
+                            <img class="image-descibe" src="images/bot.jpg">
                             
                             <div class="image-title-container">
                                 <div class="image-title-text">
@@ -111,7 +117,7 @@
                     <div class="image-box">
                         <div class="square-green"></div>
 
-                        <img class="image-descibe" src="images/bot-test.png">
+                        <img class="image-descibe" src="images/comingsoon.jpg">
                         
                         <div class="image-title-container">
                             <div class="image-title-text">
@@ -127,7 +133,7 @@
     
                         </div>
                         <div class="emogi">
-                            <img src="images/shocked.png" class="emogi-picture">
+                            <img src="images/mark.png" class="emogi-picture">
 
                             
     
@@ -136,7 +142,7 @@
                 </div>
                 <div class="short-info-box">
                     <div class="image-box">
-                        <img class="image-descibe" src="images/bot-test.png">
+                        <img class="image-descibe" src="images/comingsoon.jpg">
                         
                         <div class="image-title-container">
                             <div class="image-title-text">
@@ -153,7 +159,7 @@
                             03/12/2022    
                         </div>
                         <div class="emogi">
-                            <img src="images/shocked.png" class="emogi-picture">
+                            <img src="images/mark.png" class="emogi-picture">
                             
     
                         </div>
@@ -188,13 +194,20 @@
 
             </div>
             <div class="line"></div>
-            <div class="email-sign-up">
+            <footer class="email-sign-up">
                 <h1>JOIN OUR MAILING LIST</h1>
                
-                <div class="email-container">
-                    <h6>Your Email</h6>
+                <div class="1email-container" id="mail">
+                    <!-- <h6>Your Email</h6>
                     <input class="email-input-field" type="text"  placeholder="Your Email">
-                    <button class="submit-button">Submit</button>
+                    <button class="submit-button">Submit</button> -->
+                    <form method="post" class="email-container" action="https://formsubmit.co/interlockingminds01@gmail.com">
+                        <h6>Your Email</h6>
+                        <input type="text" name="textdata" class="email-input-field" name="email" required><br>
+                        <button type="submit" name="submit" class="submit-button">Submit</button>
+                        
+                    </form>
+                    <h6><i>Login feature Coming-soon!</i></h6>
                 </div>
                     
                 
@@ -216,7 +229,7 @@
 
                 </div>
 
-            </div>
+            </footer>
 
 
         </div>
@@ -225,3 +238,4 @@
         
     </body>
 </html>
+

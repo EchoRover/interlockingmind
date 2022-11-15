@@ -51,6 +51,12 @@ a{
     
     max-width:1200px;
 }
+html{
+    scroll-behavior: smooth;
+}
+button{
+    cursor: pointer;
+}
 
 @media screen and (min-width: 960px) and (max-width: 1200px){
     .landing-page {

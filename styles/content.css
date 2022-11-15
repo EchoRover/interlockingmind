@@ -115,7 +115,17 @@ position: absolute;
     margin-top:var(--pwidth);
     height: 32px;
     width: 100%;
-    background-color: var(--grey);
+    background-color: rgb(229, 180, 107);
+    border-radius: 20px;
+    color: aliceblue;
+    text-align: right;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: bolder;
+    
 }
 
 
@@ -146,7 +156,8 @@ position: absolute;
 
 
 .short-info-box{
-    background-color: var(--grey);
+    background-color:var(--white);
+    /* border: 2px solid #2DA8D8FF; */
     border-radius: 8px;
     margin: auto;
     display: grid;
@@ -210,7 +221,7 @@ position: absolute;
 .image-title-container{
     position: absolute;
     bottom: 0;
-    background-image:linear-gradient(rgba(0,0,0,0),var(--black));
+    background-image:linear-gradient(rgba(0,0,0,0),var(--yellow));
     color: var(--white);
     width: inherit;
     height: 30%;
@@ -220,6 +231,9 @@ position: absolute;
     align-items:center;
     justify-content:end;
 
+}
+.image-title-container:nth-child(4){
+    background-image: linear-gradient(rgba(0,0,0,0),var(--green));
 }
 
 .image-title-text{
@@ -231,7 +245,7 @@ position: absolute;
     
 }
 .image-descibe{
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 8px 8px;
     object-fit:cover;
     width:inherit;
     height: inherit;
@@ -241,9 +255,9 @@ position: absolute;
 }
 
 .describe-container{
-    background-color:rgba(217, 217, 217, 1);
+    background-color:#D9514EFF;
     display: grid;
-    border-radius: 0 0px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
     grid-template-columns: 1fr 50px;
     justify-content: space-between;
     align-items: center;
@@ -254,10 +268,11 @@ position: absolute;
 }
 
 .para-text{
-    color:var(--black);
-    font-weight:100;
+    color:#2A2B2DFF;
+    font-weight:500;
     
     font-size: 1.8em;
+    font-style: oblique;
     
 
 }
@@ -273,7 +288,13 @@ position: absolute;
     height: 100%;
     object-fit: contain;
 }
-
+@media screen and (max-width:700px){
+    .box-3{
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    
+}
 
 @media screen and (min-width: 700px) and (max-width: 960px){    
     .box-3{
